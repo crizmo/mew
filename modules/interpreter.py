@@ -36,7 +36,7 @@ def interpret(program: list, label_tracker: dict) -> None:
         elif opcode == Opcodes.SHOW:
             if not stack.is_empty():
                 value = stack.top()  # Peek the top value without removing it from the stack
-                print("hi", value)
+                print(value)
             else:
                 print("Stack is empty")
         elif opcode == Opcodes.READ:
